@@ -1,0 +1,3 @@
+source /home/bepasty/bin/activate
+
+bepasty-server
