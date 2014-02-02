@@ -39,3 +39,10 @@ python-virtualenv:
     - user: bepasty
     - group: bepasty
     - dir_mode: 777
+
+/home/bepasty/bin/start_server:
+  file.managed:
+    - source: salt://bepasty/start_server
+    - user: bepasty
+    - group: bepasty
+    - mode: 755
