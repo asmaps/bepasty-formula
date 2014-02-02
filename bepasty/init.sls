@@ -33,3 +33,9 @@ python-virtualenv:
     - runas: bepasty
     - require:
       - pkg: python-virtualenv
+
+/home/bepasty/logs:
+  file.directory:
+    - user: bepasty
+    - group: bepasty
+    - dir_mode: 777
