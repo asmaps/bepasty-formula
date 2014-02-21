@@ -50,6 +50,12 @@ python-dev:
     - group: bepasty
     - dir_mode: 777
 
+/home/bepasty/storage:
+  file.directory:
+    - user: bepasty
+    - group: bepasty
+    - dir_mode: 755
+
 /home/bepasty/bin/start_server:
   file.managed:
     - source: salt://bepasty/start_server
