@@ -23,6 +23,12 @@ bepasty:
     - group: root
     - template: jinja
 
+/home/bepasty/bepasty.conf:
+  file.managed:
+    - source: salt://bepasty/bepasty.conf
+    - user: bepasty
+    - group: bepasty
+
 python-virtualenv:
   pkg:
     - installed
