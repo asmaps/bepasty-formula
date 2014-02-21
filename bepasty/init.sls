@@ -27,6 +27,10 @@ python-virtualenv:
   pkg:
     - installed
 
+python-dev:
+  pkg:
+    - installed
+
 /home/bepasty:
   virtualenv.managed:
     - requirements: salt://bepasty/requirements.txt
@@ -46,3 +50,4 @@ python-virtualenv:
     - user: bepasty
     - group: bepasty
     - mode: 755
+    - template: jinja
