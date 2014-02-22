@@ -10,11 +10,20 @@ bepasty:
 
   supervisord.running:
     - user: root
-    - watch:
-      - file: /etc/supervisor/conf.d/bepasty.conf
     - require:
       - pkg: supervisor
       - file: /etc/supervisor/conf.d/bepasty.conf
+      - file: /home/bepasty/bin/start_server
+      - file: /home/bepasty/bepasty.conf
+      - git: bepasty
+
+  git.latest:
+    - name: https://github.com/bepasty/bepasty-server.git
+    - rev: master
+    - user: bepasty
+    - target: /home/bepasty/src
+    - require:
+      - user: bepasty
 
 /etc/supervisor/conf.d/bepasty.conf:
   file.managed:
