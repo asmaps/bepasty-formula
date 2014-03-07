@@ -9,7 +9,7 @@ export BEPASTY_CONFIG=$HOME/bepasty.conf
 
 source $HOME/bin/activate
 
-cd $HOME/src
+#cd $HOME/src
 
 exec gunicorn bepasty.wsgi \
   --name $NAME \
