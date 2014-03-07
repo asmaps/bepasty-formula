@@ -14,7 +14,8 @@ bepasty:
       - file: /etc/supervisor/conf.d/bepasty.conf
     - require:
       - pkg: supervisor
-      - file: /etc/supervisor/conf.d/bepasty.conf
+      - file: /home/bepasty/bin/start_server
+      - file: /home/bepasty/bepasty.conf
 
 /etc/supervisor/conf.d/bepasty.conf:
   file.managed:
