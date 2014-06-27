@@ -29,6 +29,7 @@ bepasty:
     - source: salt://bepasty/bepasty.conf
     - user: bepasty
     - group: bepasty
+    - template: jinja
 
 python-virtualenv:
   pkg:
