@@ -42,7 +42,7 @@ python-dev:
   virtualenv.managed:
     - requirements: salt://bepasty/requirements.txt
     - runas: bepasty
-    - pip_exists_action: w
+    - pip_exists_action: wipe
     - require:
       - pkg: python-virtualenv
 
