@@ -1,3 +1,5 @@
 bepasty_tokens:
   - 'yourtokenhere'
   - 'anothertokenhere'
+
+bepasty_secretkey: 'verylongsecretstringneededforsessionstorage'
