@@ -1,1 +1,3 @@
-bepasty-formula currently does not use any pillars.
+bepasty_tokens:
+  - 'yourtokenhere'
+  - 'anothertokenhere'
